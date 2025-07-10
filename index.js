@@ -34,7 +34,7 @@ const crypto = require('crypto');
 function findHashWithPrefix(prefix) {
     let input = 0;
     while (true) {
-        let inputStr = input.toString();
+        let inputStr = "100xdevs" + input.toString();
         // Generate SHA-256 hash and convert to hex string
         let hash = crypto.createHash('sha256').update(inputStr).digest('hex');
         if (hash.startsWith(prefix)) {
@@ -45,7 +45,7 @@ function findHashWithPrefix(prefix) {
 }
 
 // Find and print the input string and hash
-const result = findHashWithPrefix('000000');
+const result = findHashWithPrefix('0000');
 console.log(`Input: ${result.input}`);
 console.log(`Hash: ${result.hash}`);
 
