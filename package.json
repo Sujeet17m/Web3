@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "@noble/ed25519": "^2.3.0",
+    "@solana/web3.js": "^1.98.2",
+    "tweetnacl": "^1.0.3"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
