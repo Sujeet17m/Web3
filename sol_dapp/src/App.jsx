@@ -10,6 +10,7 @@ import {
   WalletModalProvider,
   WalletDisconnectButton,
   WalletMultiButton,
+  WalletConnectButton,
 } from "@solana/wallet-adapter-react-ui";
 import { Airdrop } from "./Airdrop";
 
@@ -21,6 +22,9 @@ function App() {
       <ConnectionProvider endpoint={"https://api.devnet.solana.com"}>
         <WalletProvider wallets={[]} autoConnect>
           <WalletModalProvider>
+            <WalletMultiButton />
+            <WalletDisconnectButton />
+            <WalletConnectButton />
             <div>Hi there!</div>
             <Airdrop/>
           </WalletModalProvider>
